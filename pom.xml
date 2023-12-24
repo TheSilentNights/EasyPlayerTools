@@ -34,13 +34,6 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/GroupManager.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>net.milkbowl</groupId>
-            <artifactId>vault</artifactId>
-            <version>1.7.3</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/Vault.jar</systemPath>
-        </dependency>
     </dependencies>
 
     <build>

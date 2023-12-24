@@ -1,6 +1,7 @@
 package com.lunarcorona;
 
 
+import com.lunarcorona.commands.economy.PlayerEconomy;
 import com.lunarcorona.commands.playerlist.PlayerList;
 import com.lunarcorona.commands.playerlist.PlayerListTabCompleter;
 import com.lunarcorona.plugins.PluginChecker;
@@ -20,6 +21,9 @@ public class EasyPlayerTools extends JavaPlugin {
         PluginCommand commands = getCommand("playerlist");
         commands.setTabCompleter(new PlayerListTabCompleter());
         commands.setExecutor(new PlayerList());
+
+        PluginCommand playerEconomy = getCommand("playerEconomy");
+        playerEconomy.setExecutor(new PlayerEconomy());
     }
 
     @Override
