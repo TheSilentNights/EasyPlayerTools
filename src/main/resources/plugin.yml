@@ -1,9 +1,11 @@
 name: ExamplePlugin
 version: 1.0.0
-main: com.lunarcorona.LunarTools
+main: com.lunarcorona.EasyPlayerTools
 description: An example plugin
 author: Lunar_corona
 api-version: 1.19
+loadbefore:
+  - GroupManager
 commands:
   playerlist:
     description: none
