@@ -9,14 +9,17 @@ import org.bukkit.command.CommandSender;
 import java.util.Comparator;
 
 public class Handler {
-    public static void showAllPlayer(CommandSender commandSender){
+    public static void showAllPlayer(CommandSender commandSender) {
         commandSender.sendMessage("当前玩家:");
         EasyPlayerTools.instance.getServer().getOnlinePlayers().forEach(player -> commandSender.sendMessage(player.getName()));
     }
 
-    public static void showAllPlayerWithRank(CommandSender commandSender){
+    public static void showAllPlayerWithRank(CommandSender commandSender, String rank) {
         OverloadedWorldHolder holder = EasyPlayerTools.getPlugin(GroupManager.class).getWorldsHolder().getWorldData(EasyPlayerTools.getPlugin(GroupManager.class).getWorldsHolder().getDefaultWorld().getName());
-        holder.getUserList().stream().sorted(Comparator.comparing(User::getGroupName)).forEach(user -> {
-            commandSender.sendMessage(user.getName()+" : "+user.getGroupName());
+        holder.getUserList().stream().filter(user -> user.getGroupName().equals(rank)).forEach(user -> {
+            commandSender.sendMessage(user.getName() + " : " + user.getGroupName());
         });
-    }}
+    }
+}
+
+

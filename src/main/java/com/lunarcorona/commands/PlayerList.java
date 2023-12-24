@@ -23,8 +23,7 @@ public class PlayerList implements CommandExecutor {
         }
         if (strings[0].equals("with")){
             if (strings[1].equals("ranks") && useGroupManager){
-                Handler.showAllPlayerWithRank(commandSender);
-
+                Handler.showAllPlayerWithRank(commandSender,strings[2]);
                 return true;
             }
         }
