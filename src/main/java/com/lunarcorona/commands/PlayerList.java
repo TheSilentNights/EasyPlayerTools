@@ -26,6 +26,10 @@ public class PlayerList implements CommandExecutor {
                 Handler.showAllPlayerWithRank(commandSender,strings[2]);
                 return true;
             }
+            if (strings[1].equals("name") && useGroupManager){
+                Handler.showAllPlayerWithName(commandSender,strings[2]);
+                return true;
+            }
         }
         else{
             return false;
