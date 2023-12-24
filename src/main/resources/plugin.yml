@@ -9,3 +9,6 @@ commands:
   playerlist:
     description: none
     usage: none
+  playereconomy:
+    description: none
+    usage: none
