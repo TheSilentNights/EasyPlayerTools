@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lunarcorona</groupId>
-    <artifactId>EasyPlayerTools</artifactId>
+    <artifactId>EasyAdminTools</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -33,6 +33,13 @@
             <version>3.2</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/GroupManager.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.earth2me</groupId>
+            <artifactId>essentials</artifactId>
+            <version>2.20.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/EssentialsX-2.20.0.jar</systemPath>
         </dependency>
     </dependencies>
 

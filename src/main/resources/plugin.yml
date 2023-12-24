@@ -12,3 +12,6 @@ commands:
   playereconomy:
     description: none
     usage: none
+  iGroupManager:
+    description: none
+    usage: none

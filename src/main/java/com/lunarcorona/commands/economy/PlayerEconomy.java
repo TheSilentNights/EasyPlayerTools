@@ -20,6 +20,7 @@ public class PlayerEconomy implements CommandExecutor {
         }
         if (strings[0].equals("name")){
             PlayerEconomyHandler.showPlayerEconomyWithName(commandSender,strings[1]);
+            return true;
         }
         return false;
     }
