@@ -4,8 +4,7 @@ main: com.lunarcorona.EasyPlayerTools
 description: An example plugin
 author: Lunar_corona
 api-version: 1.19
-loadbefore:
-  - GroupManager
+load: POSTWORLD
 commands:
   playerlist:
     description: none

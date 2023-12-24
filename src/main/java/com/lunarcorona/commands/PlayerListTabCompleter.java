@@ -20,7 +20,7 @@ public class PlayerListTabCompleter implements TabCompleter {
         if (strings.length == 1) {
             return List.of("with");
         } else if (strings.length == 2) {
-            return List.of("ranks");
+            return List.of("rank","name");
         } else if (strings.length == 3) {
             List<String> list = new ArrayList<>();
             holder.getGroupList().forEach(group -> list.add(group.getName()));
