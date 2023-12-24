@@ -1,7 +1,7 @@
-package com.lunarcorona.commands;
+package com.lunarcorona.commands.playerlist;
 
 import com.lunarcorona.EasyPlayerTools;
-import com.lunarcorona.players.Handler;
+import com.lunarcorona.handlers.PlayerListHandler;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -18,16 +18,16 @@ public class PlayerList implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if (strings.length == 0){
-            Handler.showAllPlayer(commandSender);
+            PlayerListHandler.showAllPlayer(commandSender);
             return true;
         }
         if (strings[0].equals("with")){
             if (strings[1].equals("ranks") && useGroupManager){
-                Handler.showAllPlayerWithRank(commandSender,strings[2]);
+                PlayerListHandler.showAllPlayerWithRank(commandSender,strings[2]);
                 return true;
             }
             if (strings[1].equals("name") && useGroupManager){
-                Handler.showAllPlayerWithName(commandSender,strings[2]);
+                PlayerListHandler.showAllPlayerWithName(commandSender,strings[2]);
                 return true;
             }
         }

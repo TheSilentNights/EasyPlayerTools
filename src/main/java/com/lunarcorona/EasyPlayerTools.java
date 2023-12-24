@@ -1,8 +1,8 @@
 package com.lunarcorona;
 
 
-import com.lunarcorona.commands.PlayerList;
-import com.lunarcorona.commands.PlayerListTabCompleter;
+import com.lunarcorona.commands.playerlist.PlayerList;
+import com.lunarcorona.commands.playerlist.PlayerListTabCompleter;
 import com.lunarcorona.plugins.PluginChecker;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;

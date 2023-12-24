@@ -1,4 +1,4 @@
-package com.lunarcorona.commands;
+package com.lunarcorona.commands.playerlist;
 
 import com.lunarcorona.EasyPlayerTools;
 import org.anjocaido.groupmanager.GroupManager;
