@@ -18,6 +18,7 @@ public class IGroupManager implements CommandExecutor {
             return false;
         }
         if (strings[0].equals("add")){
+            commandSender.sendMessage("此次操作将: "+strings[1]+" 的权限组由 " +holder.getUser(strings[0]).getGroupName()+" 转为 "+holder.getGroup(strings[2]).getName());
             holder.getUser(strings[1]).setGroup(holder.getGroup(strings[2]));
             return true;
         }
