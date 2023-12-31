@@ -23,7 +23,7 @@ public class EasyPlayerTools extends JavaPlugin {
         commands.setTabCompleter(new PlayerListTabCompleter());
         commands.setExecutor(new PlayerList());
 
-        PluginCommand iGroupManager =getCommand("lGroupManager");
+        PluginCommand iGroupManager =getCommand("lPlayerGroupManager");
         iGroupManager.setExecutor(new IGroupManager());
         iGroupManager.setTabCompleter(new IGroupManagerTabCompleter());
     }

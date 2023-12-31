@@ -5,10 +5,24 @@ description: An example plugin
 author: Lunar_corona
 api-version: 1.19
 load: POSTWORLD
+
+#permissions
+default-permission: op
+permissions:
+  permission.playerlist:
+    description: "玩家可使用playerlist"
+    default: not op
+
+#commands
 commands:
   lPlayerList:
-    description: none
-    usage: none
+    description: 获取玩家的权限组
+    usage: /lplayerlist with rank/name %{playername/groupname}
+    permission: permission.playerlist
+    permission-message: "You do not have permission to use this command"
   lPlayerGroupManager:
     description: none
     usage: none
+
+
+
