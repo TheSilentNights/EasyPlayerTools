@@ -23,6 +23,8 @@ commands:
   lPlayerGroupManager:
     description: none
     usage: none
-
+  lTpLocation:
+    description: none
+    usage: none
 
 
