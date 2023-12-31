@@ -6,12 +6,9 @@ author: Lunar_corona
 api-version: 1.19
 load: POSTWORLD
 commands:
-  playerlist:
+  lPlayerList:
     description: none
     usage: none
-  playereconomy:
-    description: none
-    usage: none
-  iGroupManager:
+  lPlayerGroupManager:
     description: none
     usage: none

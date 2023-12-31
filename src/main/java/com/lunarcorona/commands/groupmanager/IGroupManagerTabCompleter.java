@@ -18,7 +18,7 @@ public class IGroupManagerTabCompleter implements TabCompleter {
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if (strings.length == 1){
-            return List.of("add","remove");
+            return List.of("modify");
         } else if (strings.length == 3) {
             List<String> arr = new ArrayList<>();
             holder.getGroupList().forEach(group -> {

@@ -30,7 +30,8 @@ public class EasyPlayerTools extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        instance = null;
+        checker = null;
     }
 
 

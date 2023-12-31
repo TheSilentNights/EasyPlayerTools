@@ -14,16 +14,12 @@ public class IGroupManager implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if (strings.length != 3 && strings.length != 2){
-            commandSender.sendMessage("你必须输入三个字段->add name group");
+            commandSender.sendMessage("你必须输入三/二个字段->add name group");
             return false;
         }
-        if (strings[0].equals("add")){
+        if (strings[0].equals("modify")){
             commandSender.sendMessage("此次操作将: "+strings[1]+" 的权限组由 " +holder.getUser(strings[0]).getGroupName()+" 转为 "+holder.getGroup(strings[2]).getName());
             holder.getUser(strings[1]).setGroup(holder.getGroup(strings[2]));
-            return true;
-        }
-        if (strings[0].equals("remove")){
-            holder.getUser(strings[1]).setGroup(holder.getDefaultGroup());
             return true;
         }
         return false;
